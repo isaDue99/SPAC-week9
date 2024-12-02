@@ -1,6 +1,6 @@
 # unit tests for polar_file_handler.py with pytest
 
-from ...Polar_File_Handler import FileHandler
+#from ...Polar_File_Handler import FileHandler
 
 class TestPolarFileHandler:
     input_file = "input.xlsx"
