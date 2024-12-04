@@ -10,6 +10,9 @@ Notes on discoveries made while debugging this foreign/unknown codebase
     - of the 20 downloaded files, 11 are incorrectly marked in the metadata spreadsheet
     - BR50046 is missing from the list entirely (note: corresponding row in input file is lacking links entirely)
     - the BRnum column is ordered aplhabetically except for rows BR50048 and BR50049, which have switched places
+- using polar_file_handler also outputs a weird metadata spreadsheet
+    - 10 of the 20 rows in spreadsheet were incorrect
+    - BR50046 was present in the list
 
 ## peculiar design
 - program by default will only process 20 rows of the input file each time it's ran, and offers no commandline options to change this
@@ -19,6 +22,7 @@ Notes on discoveries made while debugging this foreign/unknown codebase
 # changes from initial fork of codebase (aside from tests)
 
 - Controller.py:1: changed ```from Polar_File_Handler import FileHandler``` to ```from File_Handler import FileHandler``` since polar_file_handler is missing an import
+    - changed this back and added xlxswriter to requirements.txt
 
 
 # tests

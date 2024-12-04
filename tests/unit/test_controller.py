@@ -22,4 +22,4 @@ class TestController:
         c.set_destination(self.destination_folder)
         assert c.destination == self.destination_folder
 
-    # tests of run() reserved for integration tests
+    # run() is so reliant on FileHandler that we'll save it for those tests
