@@ -37,9 +37,9 @@ python -m pytest
 ## unit
 - [x] controller.py
 - [x] downloader.py
-- [ ] file_handler.py
-- [ ] polar_file_handler.py
+- (SCRAPPED) file_handler.py (- FileHandler's 2 functions are too involved to unittest properly with the time available, somewhat covered by file_handler integration tests)
+- (SCRAPPED) polar_file_handler.py (- same^)
 
 ## integration
-- [ ] controller importing file_handler
-- [ ] file_handler importing downloader
+- [x] file_handler importing downloader
+- (SCRAPPED) controller importing file_handler (- run() in Controller is too simple to warrant tests of its own, is already covered by file_handler integration tests)
